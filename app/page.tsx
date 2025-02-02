@@ -5,6 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth, firestore } from "@/firebase/firebase";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import type { User } from "firebase/auth";
+import Features from "@/components/Features";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(true);
@@ -43,7 +44,7 @@ const HomePage = () => {
         }
       } else {
         setUser(null);
-        router.push("/login");
+        router.push("/");
       }
       setLoading(false);
     });
@@ -55,7 +56,8 @@ const HomePage = () => {
   }
   return(
     <div>
-      {user ? "Redirecting to dashboard..." : "Redirecting to Login..."}
+      <Features />
+      {/* {user ? "Redirecting to dashboard..." : "Redirecting to Login..."} */}
     </div>
   );
 };
