@@ -5,7 +5,6 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, firestore } from "@/firebase/firebase";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import Link from "next/link";
-import { sign } from "crypto";
 
 const LoginPage = () => {
     const [email, setEmail] = useState("");
