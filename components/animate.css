@@ -1,0 +1,15 @@
+@keyframes slide {
+    100% {
+      transform: translateX(-100%);
+    }
+    0% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+  .animate-slide {
+    row-gap: 2;
+    animation: slide 10s linear infinite;
+  }
+}

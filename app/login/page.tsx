@@ -61,7 +61,7 @@ const LoginPage = () => {
         <div className="justify-center items-center h-screen w-screen flex flex-col h-screen relative">
         <h2 className="text-6xl font-bold text-center">BASEBALL</h2>
         <h2 className="text-6xl font-bold text-center mb-6">ANALYTICS</h2>
-        <div className="bg-white p-5 border border-gray-300 rounded">
+        <div className="bg-white p-5 border border-gray-300 rounded-xl">
             <form onSubmit={handleLogin} className="space-y-6 px-6 pb-4">
                 <div className="mb-15">
                     <label
