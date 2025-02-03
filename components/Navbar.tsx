@@ -22,40 +22,40 @@ const SideNavbar = () => {
       <div
         onClick={() => handleClick('home')}
         className={`cursor-pointer px-4 py-7 rounded-[2rem] transition-all ${active === 'home' ? 'bg-gray-600 text-white' : 'text-gray-700'}`}
-      >  
-        <Link href="/dashboard" className="text-gray-700 hover:underline">
+      > 
+        <Link href="/dashboard">
         <FaHome size={24} />
         </Link>
       </div>
       <div
-        onClick={() => handleClick('phone')}
-        className={`cursor-pointer px-4 py-7 rounded-[2rem] transition-all ${active === 'phone' ? 'bg-gray-600 text-white' : 'text-gray-700'}`}
+        onClick={() => handleClick('chat')}
+        className={`cursor-pointer px-4 py-7 rounded-[2rem] transition-all ${active === 'chat' ? 'bg-gray-600 text-white' : 'text-gray-700'}`}
       >
-        <Link href="/chat" className="text-gray-700 hover:underline">
+        <Link href="/chat">
         <IoIosChatboxes size={24} />
         </Link>
       </div>
       <div
-        onClick={() => handleClick('about')}
-        className={`cursor-pointer px-4 py-7 rounded-[2rem] transition-all ${active === 'about' ? 'bg-gray-600 text-white' : 'text-gray-700'}`}
+        onClick={() => handleClick('video')}
+        className={`cursor-pointer px-4 py-7 rounded-[2rem] transition-all ${active === 'video' ? 'bg-gray-600 text-white' : 'text-gray-700'}`}
       >
-        <Link href="/videos" className="text-gray-700 hover:underline">
+        <Link href="/videos">
         <FaRegFileVideo size={24} />
+        </Link>
+      </div>
+      <div
+        onClick={() => handleClick('profile')}
+        className={`cursor-pointer px-4 py-7 rounded-[2rem] transition-all ${active === 'profile' ? 'bg-gray-600 text-white' : 'text-gray-700'}`}
+      >
+        <Link href="/profile">
+        <FaUserAlt size={24} />
         </Link>
       </div>
       <div
         onClick={() => handleClick('settings')}
         className={`cursor-pointer px-4 py-7 rounded-[2rem] transition-all ${active === 'settings' ? 'bg-gray-600 text-white' : 'text-gray-700'}`}
       >
-        <Link href="/profile" className="text-gray-700 hover:underline">
-        <FaUserAlt size={24} />
-        </Link>
-      </div>
-      <div
-        onClick={() => handleClick('work')}
-        className={`cursor-pointer px-4 py-7 rounded-[2rem] transition-all ${active === 'work' ? 'bg-gray-600 text-white' : 'text-gray-700'}`}
-      >
-        <Link href="/settings" className="text-gray-700 hover:underline">
+        <Link href="/settings">
         <IoSettingsSharp size={24} />
         </Link>
       </div>

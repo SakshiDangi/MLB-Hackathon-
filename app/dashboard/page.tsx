@@ -5,7 +5,7 @@ import Header from '@/components/Header'
 
 export default function page() {
   return (
-    <div className='bg-[url(./../public/dashboard.png)] h-[100vh]'>
+    <div className='bg-[url(./../public/dashboard.png)] bg-cover h-[100vh]'>
       <Header />
       <SideNavbar />
     </div>
